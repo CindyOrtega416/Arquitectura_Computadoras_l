@@ -1,0 +1,3 @@
+/home/cindyortega416/CLionProjects/Proyecto_LED/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/cindyortega416/CLionProjects/Proyecto_LED/cmake-build-debug/CMakeFiles/Proyecto_LED.dir
+/home/cindyortega416/CLionProjects/Proyecto_LED/cmake-build-debug/CMakeFiles/edit_cache.dir
