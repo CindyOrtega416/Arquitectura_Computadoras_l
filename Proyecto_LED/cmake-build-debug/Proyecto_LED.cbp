@@ -78,31 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/autoFantastico.h">
-			<Option target="Proyecto_LED"/>
-		</Unit>
-		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/autoFantasticoCod.h">
-			<Option target="Proyecto_LED"/>
-		</Unit>
-		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/carrera.h">
-			<Option target="Proyecto_LED"/>
-		</Unit>
-		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/choque.h">
-			<Option target="Proyecto_LED"/>
-		</Unit>
-		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/delay.h">
-			<Option target="Proyecto_LED"/>
-		</Unit>
-		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/login.h">
-			<Option target="Proyecto_LED"/>
-		</Unit>
 		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/main.c">
-			<Option target="Proyecto_LED"/>
-		</Unit>
-		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/menu.h">
-			<Option target="Proyecto_LED"/>
-		</Unit>
-		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/output.h">
 			<Option target="Proyecto_LED"/>
 		</Unit>
 		<Unit filename="/home/cindyortega416/CLionProjects/Proyecto_LED/CMakeLists.txt">
