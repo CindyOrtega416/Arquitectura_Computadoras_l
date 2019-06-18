@@ -4,7 +4,10 @@
 #include <ncurses.h>
 #include <termios.h>
 #include <sys/ioctl.h>
-
+#include "autoFantastico.h"
+#include "carrera.h"
+#include "choque.h"
+#include "tenis.h"
 
 static const int DELAYBAJO = 3;
 static const int DELAYBAJO1 = 5;
@@ -29,13 +32,7 @@ void tenis();
 bool kbhit();
 
 
-unsigned char datosAuto[]= {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01,};
-
-unsigned char datosChoque[] = {0x81, 0x42, 0x24, 0x18, 0x18, 0x24, 0x42, 0x81};
-
 unsigned char datosCarrera[] = {0x80, 0x80, 0x40, 0x40, 0x20, 0x20, 0x10, 0x10, 0x88, 0x48, 0x24, 0x14, 0x0A, 0x06, 0x03, 0x01,};
-
-unsigned char datosTenis[] ={0x81, 0xC1, 0xA1, 0x91, 0x89, 0x85, 0x83, 0x83, 0x85, 0x89, 0x91, 0xA1, 0xC1,};
 
 
 
@@ -158,34 +155,6 @@ void output(unsigned char b){
     fflush(stdout);
 }
 
-void autoFantasticoCod() {
-    output(1);
-    delay(DELAYMEDIO);
-    int i = 2;
-    do {
-        output(i);
-        delay(DELAYMEDIO);
-        i *= 2;
-    } while (i <= 64);
-    do {
-        output(i);
-        delay(DELAYMEDIO);
-        i /= 2;
-    } while (i > 0);
-}
-
-void autoFantastico() {
-    for(int i = 0; i < 8; i++){
-        output(datosAuto[i]);
-        delay(DELAYMEDIO);
-    }
-    for(int i = 7; i != 0; i--){
-        output(datosAuto[i]);
-        delay(DELAYMEDIO);
-    }
-}
-
-
 void carrera(){
     for(int i = 0; i < 16; i++){
         output(datosCarrera[i]);
@@ -198,26 +167,6 @@ void choque(){
         output(datosChoque[i]);
         delay(DELAYMEDIO);
     }
-}
-
-
-void tenis(){
-    for(int i = 0; i < 13; i++){
-        output(datosTenis[i]);
-        delay(DELAYMEDIO);
-    }
-
-    int i = 64;
-    do {
-        output(i + 129);
-        delay(DELAYMEDIO);
-        i/=2;
-    }while(i>2);
-    do{
-        output(i+129);
-        delay(DELAYMEDIO);
-        i*=2;
-    }while (i<65);
 }
 
 
